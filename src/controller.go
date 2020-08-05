@@ -11,7 +11,7 @@ import (
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/xing/event-forwarder-gelf/src/util"
+	"github.com/wwu-cx/event-forwarder-gelf/src/util"
 )
 
 // Controller listens for events and writes them as gelf to graylog

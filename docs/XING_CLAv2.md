@@ -1,4 +1,4 @@
-# XING Contributor License Agreement
+# wwu-cx Contributor License Agreement
 
 In order to clarify the intellectual property license granted with Contributions
 from any person or entity, the Company must have a Contributor License Agreement

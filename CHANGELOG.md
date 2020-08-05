@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release as Open-Source under the Apache License v2.0
 
-[Unreleased]: https://github.com/xing/kubernetes-event-forwarder-gelf/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/xing/kubernetes-event-forwarder-gelf/compare/0b7d9ce7a3346572d70f5f1dbc0204cf838aa927...v1.0.0
+[Unreleased]: https://github.com/wwu-cx/kubernetes-event-forwarder-gelf/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/wwu-cx/kubernetes-event-forwarder-gelf/compare/0b7d9ce7a3346572d70f5f1dbc0204cf838aa927...v1.0.0

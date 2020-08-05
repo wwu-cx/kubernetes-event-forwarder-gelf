@@ -1,6 +1,6 @@
 .PHONY: install clean test image push-image release perform-release
 
-IMAGE := xingse/event-forwarder-gelf
+IMAGE := wwu-cx/event-forwarder-gelf
 BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 
 all: event-forwarder-gelf

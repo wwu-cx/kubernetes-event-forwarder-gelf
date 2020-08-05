@@ -4,4 +4,4 @@ services:
 script:
   - make image
 after_success:
-  - .travis/perform-releases.sh event-forwarder-gelf xingse/event-forwarder-gelf
+  - .travis/perform-releases.sh event-forwarder-gelf wwu-cx/event-forwarder-gelf
