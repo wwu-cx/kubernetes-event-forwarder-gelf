@@ -7,9 +7,10 @@ import (
 	"gopkg.in/Graylog2/go-gelf.v2/gelf"
 )
 
+// GetGelfWriter tcp or udp writer
 func GetGelfWriter(host, port, proto string) gelf.Writer {
 	graylogEndpoint := host + ":" + port
-	glog.Infof("connecting to %s", graylogEndpoint)
+	glog.Infof("connecting to %s://%s", proto, graylogEndpoint)
 
 	var gelfWriter gelf.Writer
 	var err error

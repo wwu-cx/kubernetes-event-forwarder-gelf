@@ -36,25 +36,26 @@ Run this controller on Kubernetes with the following commands:
     kubectl create serviceaccount event-forwarder-gelf \
       --namespace=kube-system
 
-    kubectl create clusterrole wwu-cx:controller:event-forwarder-gelf \
+    kubectl create clusterrole wwucx:controller:event-forwarder-gelf \
       --verb=get,watch,list \
       --resource=events
 
-    kubectl create clusterrolebinding wwu-cx:controller:event-forwarder-gelf \
-      --clusterrole=wwu-cx:controller:event-forwarder-gelf \
+    kubectl create clusterrolebinding wwucx:controller:event-forwarder-gelf \
+      --clusterrole=wwucx:controller:event-forwarder-gelf \
       --serviceaccount=kube-system:event-forwarder-gelf
 
     kubectl run event-forwarder-gelf \
-      --image=wwu-cx/event-forwarder-gelf \
+      --image=wwucx/event-forwarder-gelf \
       --env=CLUSTER=cluster-name \
       --env=GRAYLOG_HOST=graylog \
       --env=GRAYLOG_PORT=12222 \
+      --env=GRAYLOG_PROTO=udp
       --serviceaccount=event-forwarder-gelf
 
 ## Development
 
 This project uses go modules introduced by [go 1.11][go-modules]. Please put the
-project somewhere outside of your GOPATH to make go automatically recogninze
+project somewhere outside of your GOPATH to make go automatically recognize
 this.
 
 All build and install steps are managed in the [Makefile](Makefile). `make test`
